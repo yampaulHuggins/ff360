@@ -1,0 +1,55 @@
+.uiform{
+    align-items: center;
+    align-content: center;
+    padding: 10%;
+    // margin: 25px 2% 2% 50%;
+    //border: 5px solid rgb(158, 0, 0);
+}
+.error{
+    color: red;
+}
+
+.wrapper-1-contact {
+
+    display: flex;
+    flex-flow: row wrap;
+    height: 100vh;
+    //border: 5px solid rgb(255, 4, 4);
+}
+.paragraph {
+    font-size: large;
+}
+.item-1-contact {
+    //background: linear-gradient( to right, rgb(255, 255, 255), rgb(95, 95, 95));
+    background-color: rgb(216, 216, 216);
+
+    order: 1;
+    border: 5px solid rgb(0, 158, 53);
+    flex-grow: 1;
+    padding: 20% 5% 0 10%;
+    max-width: 50%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content:flex-start;
+
+    @media only screen and (max-width: 480px){
+        color: black;
+        background-color: rgb(216, 216, 216);
+        order: 1;
+        min-width: 100%;
+        align-items: center;
+        align-content: center;
+        padding: 10%;
+        //border: 5px solid rgb(0, 158, 53);
+    }
+}
+
+.item-2-contact{
+    order: 2;
+    //border: 5px solid rgb(65, 68, 214);
+    flex-grow: 1;
+    // width: 20%;
+    // max-width: 50%;
+    // box-shadow: 15px 10px;
+}

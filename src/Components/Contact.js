@@ -1,6 +1,7 @@
 import React from 'react'
 import 'semantic-ui-css/semantic.min.css'
 import '../styles/Contact.css'
+//hello
 // eslint-disable-next-line 
 // import { Button, Form, Checkbox, Label, Select} from 'semantic-ui-react'
 // import { useForm } from "react-hook-form";

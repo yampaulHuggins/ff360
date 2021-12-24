@@ -2,14 +2,10 @@ import React from 'react'
 import LOGO01 from '../LOGO01.svg' // eslint-disable-next-line
 import Cuarto from '../Images/Cuarto.jpg' // eslint-disable-next-line
 import {Button, Icon} from 'semantic-ui-react' // eslint-disable-next-line
-import { Swiper, SwiperSlide } from 'swiper/react'; // eslint-disable-next-line
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
-import 'swiper/swiper-bundle.css';
 import 'semantic-ui-css/semantic.min.css'
 import '../styles/Services.css'
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 function Services() {
   

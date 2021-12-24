@@ -15,6 +15,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 function App() {
   return (
   <Router>
+    {/* <ScrollToTop/> */}
     <div className='App'>
     <Navbar/>
       <Switch>
@@ -30,5 +31,4 @@ function App() {
   </Router>
   );
 }
-
 export default App;

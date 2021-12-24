@@ -26,16 +26,25 @@ function Contact() {
     <div className="wrapper-1-contact">
       <div className="item-1-contact">
         <div>
-          <h1>
+          <h1 className="contact-title">
             Contáctanos
           </h1>
-          <p className="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis augue sed congue feugiat.
-            Mauris rhoncus gravida ipsum sit amet tincidunt. Nulla facilisi.
+          <p className="contact-paragraph">
+            Para <strong>cotizaciones</strong> nos puedes contactar por Facebook,
+            Instagram, Whatsapp o a los siguientes números telefónicos:
+            <strong>(787)-585-3623</strong> o <strong>(939)-282-1986</strong>. 
           </p>
         </div>
       </div>
       <div className="item-2-contact">
+      <a href='https://www.facebook.com/fizzelfurniture360/' target="_blank" rel="noopener noreferrer"><i class="massive facebook icon"></i></a>
+      <a href='https://www.instagram.com/fizzelfurniture360/' target="_blank" rel="noopener noreferrer"><i class="massive instagram icon"></i></a>
+      <a href='https://api.whatsapp.com/send?phone=17875853623&amp;app=facebook&amp;entry_point=page_cta'><i class="massive whatsapp icon"></i></a>
+        {/* <div className="contact-icon-list">
+          <div className="icon-social"><a href='https://www.facebook.com/fizzelfurniture360/'><Icon name="facebook official" size="massive"/></a></div>
+          <div className="icon-social"><a href='https://www.instagram.com/fizzelfurniture360/'><Icon name="instagram" size="massive"/></a></div>
+          <div className="icon-social"><a href='https://www.facebook.com/fizzelfurniture360/'><Icon name="whatsapp" size="massive"/></a></div>
+        </div> */}
         {/* <Form className="uiform" onSubmit={handleSubmit(onSubmit)}>
           <Form.Field required>
             <label>Nombre:</label>

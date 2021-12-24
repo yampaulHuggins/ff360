@@ -1,6 +1,5 @@
 import React from 'react'
 import 'semantic-ui-css/semantic.min.css'
-import '../styles/App.css'
 // eslint-disable-next-line no-unused-vars
 import Navbar from './Navbar'
 import Quotes from './Quotes'
@@ -16,7 +15,7 @@ function App() {
   return (
   <Router>
     {/* <ScrollToTop/> */}
-    <div className='App'>
+    <div>
     <Navbar/>
       <Switch>
         <Route path="/" exact component={Home}/>

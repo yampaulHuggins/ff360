@@ -16,7 +16,7 @@ function Services() {
   return (
     <div className="wrapper-services">
       <div className="section-1">
-        <h1 className="headline">HEADLINE</h1>
+        <h1 className="services-headline">HEADLINE (Slogan)</h1>
         <h2 className="subheadline">subheadline</h2>
         <div className="subsection-1">
           <div className="sub-item-1">
@@ -43,7 +43,7 @@ function Services() {
           </h1>
         </Button>
       </div> */}
-      <div className="section-3">
+      {/* <div className="section-3">
         <div className="sec-item-1">
           <p className="services-paragraph-2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim,
@@ -58,8 +58,8 @@ function Services() {
         <div className="sec-item-2">
           <img src={LOGO01} className='image' alt='Fizzel Furniture 360 (FF360)'/>
         </div>
-      </div>
-      <div className="subsection-1">
+      </div> */}
+      {/* <div className="subsection-1">
           <div className="sub-item-1">
             <img src={LOGO01} className='image' alt='Fizzel Furniture 360 (FF360)'/>
           </div>
@@ -73,11 +73,16 @@ function Services() {
             Cras ac felis mauris. Nulla gravida eros condimentum risus vulputate,
             et aliquet diam tincidunt.
             </p>
-            {/* <Button size="massive" className="getQuote">Get a Quote Today!</Button> */}
+            <Button size="massive" className="getQuote">Get a Quote Today!</Button>
           </div>
-        </div>
+      </div> */}
       <div className="section-4">
-        <h1 className="work-Headline">NUESTRO TRABAJO HABLA POR SI SOLO</h1>
+        <h1 className="work-Headline">QUE NUESTRO TRABAJO HABLE POR SI SOLO:</h1>
+        <div className="sub-section-4">
+          <a href='https://www.facebook.com/fizzelfurniture360/' target="_blank" rel="noopener noreferrer"><i class="massive facebook icon"></i></a>
+          <a href='https://www.instagram.com/fizzelfurniture360/' target="_blank" rel="noopener noreferrer"><i class="massive instagram icon"></i></a>
+          <a href='https://api.whatsapp.com/send?phone=17875853623&amp;app=facebook&amp;entry_point=page_cta'><i class="massive whatsapp icon"></i></a>
+        </div>
         {/* <Swiper className="photo-gallery"
           spaceBetween={10}
           slidesPerView={1}
@@ -105,9 +110,9 @@ function Services() {
           </div>
         </div>
       </div> */}
-      <div className="section-6">
+      {/* <div className="section-6">
         
-      </div>
+      </div> */}
     </div>
   );
 }

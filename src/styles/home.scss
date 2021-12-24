@@ -6,21 +6,29 @@
     // background: linear-gradient( to right, rgb(255, 255, 255), rgb(95, 95, 95));
     background-color: rgb(216, 216, 216);
 
+    height: 100vh;
     display: flex;
     flex-flow: row wrap;
     //padding-top: 50px;
     // padding-top: 47px;
     // border: 5px solid rgb(158, 0, 0);
+    @media only screen and (max-width: 480px){
+        height: fit-content;
+    }
 }
 .item-1 {
     order: 1;
-    // border: 5px solid rgb(0, 158, 53);
-    flex-grow: 1;
+    //border: 5px solid rgb(0, 158, 53);
+    // flex-grow: 1;
     padding: 12% 7% 12% 7%;
     max-width: 50%;
 
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
     @media only screen and (max-width: 480px){
-        min-width: 100%;
+        max-width: 100%;
         order: 2;
         text-align: center;
         padding: 15%;
@@ -29,15 +37,20 @@
 
 .item-2 {
     order: 2;
-    // border: 5px solid rgb(65, 68, 214);
+    //border: 5px solid rgb(65, 68, 214);
     flex-grow: 1;
-    padding: 5% 0% 0 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    // padding: 5% 0% 0 0;
     // width: 20%;
     @media only screen and (max-width: 480px){
         order: 1;
         align-items: center;
         align-content: center;
         padding: 0;
+        height: fit-content;
         //border: 5px solid rgb(65, 68, 214);
     }
 }
@@ -45,9 +58,27 @@
     width: 100%;
     align-items: center;
     text-align: center;
-    //border: 5px solid rgb(65, 87, 214);
+    // border: 5px solid rgb(65, 87, 214);
     // margin: 0% 0 0 5%;
 }
-h1{
-    font-size: 50px;
+.landing-headline{
+    font-size: 75px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    @media only screen and (max-width: 480px){
+        font-size: 50px;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+.subHeadline {
+    font-size: 20px;
+    @media only screen and (max-width: 480px){ 
+        padding-top: 10%;
+        text-align: justify;
+    }
 }

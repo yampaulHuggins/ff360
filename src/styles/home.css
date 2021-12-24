@@ -1,5 +1,6 @@
 .landingContainer {
   background-color: #d8d8d8;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9,20 +10,35 @@
           flex-flow: row wrap;
 }
 
+@media only screen and (max-width: 480px) {
+  .landingContainer {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+
 .item-1 {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   padding: 12% 7% 12% 7%;
   max-width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media only screen and (max-width: 480px) {
   .item-1 {
-    min-width: 100%;
+    max-width: 100%;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -38,7 +54,16 @@
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding: 5% 0% 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media only screen and (max-width: 480px) {
@@ -52,6 +77,9 @@
     -ms-flex-line-pack: center;
         align-content: center;
     padding: 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 
@@ -63,7 +91,31 @@
   text-align: center;
 }
 
-h1 {
-  font-size: 50px;
+.landing-headline {
+  font-size: 75px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 480px) {
+  .landing-headline {
+    font-size: 50px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.subHeadline {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  .subHeadline {
+    padding-top: 10%;
+    text-align: justify;
+  }
 }
 /*# sourceMappingURL=home.css.map */

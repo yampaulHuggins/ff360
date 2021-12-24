@@ -9,8 +9,14 @@ function Footer(){
       <section className='ft-main'>
         <div className='main-item'>
           <h2 className="title">Nosotros</h2>
-          <p className='paragraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-           Ut convallis augue sed congue feugiat.</p>
+          <p className='paragraph'>
+            <ul>
+              <li>Est. 2017</li>
+              <li>Especializados en Elaboración Mobiliaria</li>
+              <li>Ubicados en la 65 Infantería</li>
+              <li>Made in PR</li>
+            </ul>
+          </p>
         </div>
         {/* <div className='main-item'>
           <h2 className="title">Enlaces</h2>
@@ -41,8 +47,8 @@ function Footer(){
       
       <section className='social'>
         <ul className="social-list">
-          <li><a href='https://www.facebook.com/fizzelfurniture360/'><i className="big facebook square icon"></i></a></li>
-          <li><a href='https://www.instagram.com/fizzelfurniture360/'><i className="big instagram icon"></i></a></li>
+          <li><a href='https://www.facebook.com/fizzelfurniture360/' target="_blank" rel="noopener noreferrer"><i className="big facebook square icon"></i></a></li>
+          <li><a href='https://www.instagram.com/fizzelfurniture360/' target="_blank" rel="noopener noreferrer"><i className="big instagram icon"></i></a></li>
         </ul>
       </section>
       <section className='legal'>
@@ -50,7 +56,7 @@ function Footer(){
           {/* <li><a href="https://www.termsfeed.com/blog/write-terms-conditions/">Términos &amp; Condiciones</a></li>
           <li><a href="https://policies.google.com/privacy?hl=en-US">Política de Privacidad</a></li>
           <li><a href="https://policies.google.com/privacy?hl=en-US">Oportunidades de Empleo</a></li> */}
-          <li>FIZZEL FURNITURE 360 &copy; 2021</li>
+          <li>FIZZEL FURNITURE 360 &copy; 2022</li>
         </ul>
       </section>
     </footer>

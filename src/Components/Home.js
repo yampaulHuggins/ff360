@@ -7,7 +7,7 @@ import LOGO01 from '../LOGO01.svg'
 
 function Home() {
   return (
-      <div className="wrapper">
+      <div>
         <div className='landingContainer'>
           <div className='item-1'>
             <div>

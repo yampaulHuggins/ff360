@@ -14,7 +14,7 @@
 }
 .item-1 {
     order: 1;
-    //border: 5px solid rgb(0, 158, 53);
+    // border: 5px solid rgb(0, 158, 53);
     // flex-grow: 1;
     padding: 12% 7% 12% 7%;
     max-width: 50%;
@@ -27,7 +27,7 @@
         max-width: 100%;
         order: 2;
         text-align: center;
-        padding: 15%;
+        padding: 7% 15% 15% 15%;
     }
 }
 
@@ -45,9 +45,9 @@
         order: 1;
         align-items: center;
         align-content: center;
-        padding: 0;
+        padding: 7% 0 0 0;
         height: fit-content;
-        //border: 5px solid rgb(65, 68, 214);
+        // border: 5px solid rgb(65, 68, 214);
     }
 }
 .logo {
@@ -63,11 +63,12 @@
     margin: 0;
     padding: 0;
     @media only screen and (max-width: 480px){
-        font-size: 50px;
+        font-size: 40px;
         text-align: left;
         margin: 0;
         padding: 0;
         width: 100%;
+        // border: 5px solid rgb(65, 87, 214);
     }
 }
 
@@ -76,5 +77,13 @@
     @media only screen and (max-width: 480px){ 
         padding-top: 10%;
         text-align: justify;
+        font-size: 18px;
+        // border: 5px solid rgb(65, 87, 214);
+    }
+}
+.moreButton{
+    @media only screen and (max-width: 480px){ 
+        padding-top: 5%;
+        // border: 5px solid rgb(65, 87, 214);
     }
 }

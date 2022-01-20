@@ -4,9 +4,11 @@ import 'semantic-ui-css/semantic.min.css'
 import '../styles/home.css'
 import {Button} from 'semantic-ui-react'
 import LOGO01 from '../LOGO01.svg'
+import { motion } from 'framer-motion';
 
 function Home() {
   return (
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{opacity: 0}}>
       <div>
         <div className='landingContainer'>
           <div className='item-1'>
@@ -20,9 +22,11 @@ function Home() {
                 Permitenos brindarte el mejor servicio.
               </p>
               <Link to='/servicios'>
-                <Button size="massive" className="moreButton">
-                  VER MAS
-                </Button>
+                <div className="moreButton">
+                  <Button size="big" color="red" className="moreButton">
+                    Ver más
+                  </Button>
+                </div>
               </Link>
             {/* <h1 className="headline">SOLICITA UNA COTIZACION HOY.</h1>
             <p className="subHeadline">BRINDANDO SERVICIOS A TODO PUERTO RICO, SOLICITA UNA COTIZACION HOY.</p>
@@ -36,6 +40,7 @@ function Home() {
           </div>
         </div>
       </div>
+      </motion.div>
   );
 }
 export default Home;

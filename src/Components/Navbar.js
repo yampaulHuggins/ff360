@@ -11,12 +11,39 @@ import HomeIcon from '@material-ui/icons/Home'
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
+import PropTypes from 'prop-types';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer';
+import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import '../styles/Navbar.css'
 // import LOGO03 from '../LOGO03.svg'
+
+function ElevationScroll(props) {
+  const { children, window } = props;
+  // Note that you normally won't need to set the window ref as useScrollTrigger
+  // will default to window.
+  // This is only being set here because the demo is in an iframe.
+  const trigger = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 0,
+    target: window ? window() : undefined,
+  });
+
+  return React.cloneElement(children, {
+    elevation: trigger ? 4 : 0,
+  });
+}
+
+ElevationScroll.propTypes = {
+  children: PropTypes.element.isRequired,
+  /**
+   * Injected by the documentation to work in an iframe.
+   * You won't need it on your project.
+   */
+  window: PropTypes.func,
+};
 
 const useStyles = makeStyles((theme) => ({
   list: {
@@ -36,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   toolbar: {
-    background: 'rgba(255,255,255,0);'
+    background: 'rgb(216, 216, 216);'
   },
   logo: {
     width: '5%'
@@ -76,7 +103,7 @@ function Navbar(props) {
           <ListItemIcon>
             <HomeIcon />
           </ListItemIcon>
-          <ListItemText primary={"Inicio"}/>       
+          <ListItemText primary={"INICIO"}/>       
         </ListItem>
         </Link>
 
@@ -94,7 +121,7 @@ function Navbar(props) {
           <ListItemIcon>
             <QuestionAnswerIcon/>
           </ListItemIcon>
-          <ListItemText primary={"Servicios"}/>
+          <ListItemText primary={"SERVICIOS"}/>
         </ListItem>
         </Link>
 
@@ -103,7 +130,7 @@ function Navbar(props) {
           <ListItemIcon>
             <DashboardIcon/>
           </ListItemIcon>
-          <ListItemText primary={"Contáctanos"}/>
+          <ListItemText primary={"CONTACTO"}/>
         </ListItem>
         </Link>
 
@@ -122,6 +149,7 @@ function Navbar(props) {
 
   return (
     <div>
+      <ElevationScroll {...props}>
       <AppBar position="fixed" className={classes.toolbar} elevation={0}>
         <Toolbar variant="regular">
           {['left'].map((anchor) => (
@@ -130,6 +158,7 @@ function Navbar(props) {
                 <MenuIcon className="burger" fontSize="large"/>
                 {/* <RadioButtonUncheckedIcon className="burger" fontSize="medium"/> */}
               </IconButton>
+              {/* <p className="navbar-title">FIZZEL FURNITURE 360</p> */}
               {/* <img src={LOGO03} className={classes.logo} alt='Fizzel Furniture 360 (FF360)'/> */}
               <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
                 {list(anchor)}
@@ -138,6 +167,7 @@ function Navbar(props) {
           ))}
         </Toolbar>
       </AppBar>
+      </ElevationScroll>
     </div>
   );
 }

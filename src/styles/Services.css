@@ -1,5 +1,5 @@
 .wrapper-services {
-  padding-top: 75px;
+  padding-top: 4.5%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -8,6 +8,12 @@
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .wrapper-services {
+    padding-top: 15%;
+  }
 }
 
 .section-1 {
@@ -26,6 +32,12 @@
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+}
+
+@media only screen and (max-width: 480px) {
+  .services-headline {
+    font-size: 60px;
+  }
 }
 
 .subheadline {
@@ -105,6 +117,12 @@
   padding: 5%;
   text-align: justify;
   font-size: 24px;
+}
+
+@media only screen and (max-width: 480px) {
+  .services-paragraph-1 {
+    font-size: 20px;
+  }
 }
 
 .getQuote {
@@ -190,7 +208,7 @@
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
   padding-top: 3%;
-  background-color: bisque;
+  background-color: #cccccc;
   padding-bottom: 3%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -224,6 +242,7 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding-top: 5%;
 }
 
 @media only screen and (max-width: 480px) {

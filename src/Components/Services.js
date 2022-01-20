@@ -1,7 +1,10 @@
-import React from 'react'
+import React from 'react' // eslint-disable-next-line
 import LOGO01 from '../LOGO01.svg' // eslint-disable-next-line
+import LOGO02 from '../LOGO02.svg' // eslint-disable-next-line
+import LOGO03 from '../LOGO03.svg' // eslint-disable-next-line
 import Cuarto from '../Images/Cuarto.jpg' // eslint-disable-next-line
 import {Button, Icon} from 'semantic-ui-react' // eslint-disable-next-line
+import { motion } from 'framer-motion';
 
 import 'semantic-ui-css/semantic.min.css'
 import '../styles/Services.css'
@@ -10,13 +13,14 @@ import '../styles/Services.css'
 function Services() {
   
   return (
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{opacity: 0}}>
     <div className="wrapper-services">
       <div className="section-1">
         <h1 className="services-headline">HEADLINE (Slogan)</h1>
         <h2 className="subheadline">subheadline</h2>
         <div className="subsection-1">
           <div className="sub-item-1">
-            <img src={LOGO01} className='image' alt='Fizzel Furniture 360 (FF360)'/>
+            <img src={LOGO02} className='image' alt='Fizzel Furniture 360 (FF360)'/>
           </div>
           <div className="sub-item-2">
             <p className="services-paragraph-1">
@@ -73,11 +77,11 @@ function Services() {
           </div>
       </div> */}
       <div className="section-4">
-        <h1 className="work-Headline">QUE NUESTRO TRABAJO HABLE POR SI SOLO:</h1>
+        <h1 className="work-Headline">Que nuestro trabajo hable por si mismo, visita nuestras redes sociales y échale un vistazo a nuestros proyectos:</h1>
         <div className="sub-section-4">
           <a href='https://www.facebook.com/fizzelfurniture360/' target="_blank" rel="noopener noreferrer"><i class="massive facebook icon"></i></a>
           <a href='https://www.instagram.com/fizzelfurniture360/' target="_blank" rel="noopener noreferrer"><i class="massive instagram icon"></i></a>
-          <a href='https://api.whatsapp.com/send?phone=17875853623&amp;app=facebook&amp;entry_point=page_cta'><i class="massive whatsapp icon"></i></a>
+          <a href='https://api.whatsapp.com/send?phone=17875853623&amp;app=facebook&amp;entry_point=page_cta' target="_blank" rel="noopener noreferrer"><i class="massive whatsapp icon"></i></a>
         </div>
         {/* <Swiper className="photo-gallery"
           spaceBetween={10}
@@ -110,6 +114,7 @@ function Services() {
         
       </div> */}
     </div>
+    </motion.div>
   );
 }
 export default Services;

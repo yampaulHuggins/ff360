@@ -43,7 +43,7 @@
         -ms-flex-order: 2;
             order: 2;
     text-align: center;
-    padding: 15%;
+    padding: 7% 15% 15% 15%;
   }
 }
 
@@ -76,7 +76,7 @@
             align-items: center;
     -ms-flex-line-pack: center;
         align-content: center;
-    padding: 0;
+    padding: 7% 0 0 0;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -100,7 +100,7 @@
 
 @media only screen and (max-width: 480px) {
   .landing-headline {
-    font-size: 50px;
+    font-size: 40px;
     text-align: left;
     margin: 0;
     padding: 0;
@@ -116,6 +116,13 @@
   .subHeadline {
     padding-top: 10%;
     text-align: justify;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .moreButton {
+    padding-top: 5%;
   }
 }
 /*# sourceMappingURL=home.css.map */

@@ -1,6 +1,7 @@
 import React from 'react'
 import 'semantic-ui-css/semantic.min.css'
 import '../styles/Contact.css'
+import { motion } from 'framer-motion';
 //hello
 // eslint-disable-next-line 
 // import { Button, Form, Checkbox, Label, Select} from 'semantic-ui-react'
@@ -23,6 +24,7 @@ function Contact() {
   // const { register, handleSubmit, formState: { errors }} = useForm();
   // const onSubmit = data => console.log(data);
   return (
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{opacity: 0}}>
     <div className="wrapper-1-contact">
       <div className="item-1-contact">
         <div>
@@ -32,14 +34,14 @@ function Contact() {
           <p className="contact-paragraph">
             Para <strong>cotizaciones</strong> nos puedes contactar por Facebook,
             Instagram, Whatsapp o a los siguientes números telefónicos:
-            <strong>(787)-585-3623</strong> o <strong>(939)-282-1986</strong>. 
+            <strong> (787)-585-3623</strong> o <strong>(939)-282-1986</strong>. 
           </p>
         </div>
       </div>
       <div className="item-2-contact">
       <a href='https://www.facebook.com/fizzelfurniture360/' target="_blank" rel="noopener noreferrer"><i class="massive facebook icon"></i></a>
       <a href='https://www.instagram.com/fizzelfurniture360/' target="_blank" rel="noopener noreferrer"><i class="massive instagram icon"></i></a>
-      <a href='https://api.whatsapp.com/send?phone=17875853623&amp;app=facebook&amp;entry_point=page_cta'><i class="massive whatsapp icon"></i></a>
+      <a href='https://api.whatsapp.com/send?phone=17875853623&amp;app=facebook&amp;entry_point=page_cta' target="_blank" rel="noopener noreferrer"><i class="massive whatsapp icon"></i></a>
         {/* <div className="contact-icon-list">
           <div className="icon-social"><a href='https://www.facebook.com/fizzelfurniture360/'><Icon name="facebook official" size="massive"/></a></div>
           <div className="icon-social"><a href='https://www.instagram.com/fizzelfurniture360/'><Icon name="instagram" size="massive"/></a></div>
@@ -92,6 +94,7 @@ function Contact() {
         </Form> */}
       </div>
     </div>
+    </motion.div>
   );
 }
 export default Contact;

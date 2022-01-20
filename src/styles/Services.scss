@@ -1,13 +1,16 @@
 .wrapper-services {
     // margin: 50px 0 0 0;
     //border: 5px solid rgb(0, 158, 53);
-    padding-top: 75px;
+    padding-top: 4.5%;
     height: fit-content;
     align-items: center;
     align-content: center;
+    @media only screen and (max-width: 480px){
+        padding-top: 15%;
+    }
 }
 .section-1 {
-    //border: 5px solid rgb(0, 158, 53);
+    // border: 5px solid rgb(0, 158, 53);
     display: flex;
     flex-flow: column wrap;
 }
@@ -15,6 +18,9 @@
     text-align: center;
     font-size: 75px;
     order: 1;
+    @media only screen and (max-width: 480px){
+        font-size: 60px;
+    }
 }
 .subheadline {
     text-align: center;
@@ -24,13 +30,13 @@
     order: 3;
     display: flex;
     flex-flow: row nowrap;
-    //border: 5px solid rgb(158, 0, 0);
+    // border: 5px solid rgb(158, 0, 0);
     @media only screen and (max-width: 480px){
         flex-flow: column nowrap;
     }
 }
 .sub-item-1 {
-    //border: 5px solid rgb(0, 0, 0);
+    // border: 5px solid rgb(0, 0, 0);
     order: 1;
 
     display: flex;
@@ -64,6 +70,9 @@
     font-size: 24px;
     //border: 5px solid rgb(0, 158, 53);
     // align-self: flex-end;
+    @media only screen and (max-width: 480px){
+        font-size: 20px;
+    }
 }
 .getQuote {
     // margin: 0 50px 0 0;
@@ -119,7 +128,7 @@
     display: flex;
     flex-flow: column wrap;
     padding-top: 3%;
-    background-color: bisque;
+    background-color: rgb(204, 204, 204);
     padding-bottom: 3%;
     height: fit-content;
     justify-content: space-evenly;
@@ -136,6 +145,7 @@
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-evenly;
+    padding-top: 5%;
 
     @media only screen and (max-width: 480px){
         flex-flow: column nowrap;

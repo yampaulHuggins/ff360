@@ -49,6 +49,7 @@ function Footer(){
         <ul className="social-list">
           <li><a href='https://www.facebook.com/fizzelfurniture360/' target="_blank" rel="noopener noreferrer"><i className="big facebook square icon"></i></a></li>
           <li><a href='https://www.instagram.com/fizzelfurniture360/' target="_blank" rel="noopener noreferrer"><i className="big instagram icon"></i></a></li>
+          <li><a href='https://api.whatsapp.com/send?phone=17875853623&amp;app=facebook&amp;entry_point=page_cta' target="_blank" rel="noopener noreferrer"><i class="big whatsapp icon"></i></a></li>
         </ul>
       </section>
       <section className='legal'>

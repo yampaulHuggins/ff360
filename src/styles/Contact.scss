@@ -25,14 +25,15 @@
 
 }
 .contact-title {
+    // border: 5px solid rgb(255, 4, 4);
     font-size: 60px;
     text-align: left;
     margin: 0;
     padding: 0;
 
     @media only screen and (max-width: 480px){
-        font-size: 55px;
-        text-align: left;
+        font-size: 35px;
+        text-align: center;
         margin: 0 0 0 0;
         padding: 25% 0 0 0;
     }
@@ -45,7 +46,7 @@
     @media only screen and (max-width: 480px){
         padding: 5%;
         font-size: 15px;
-        text-align: justify;
+        text-align: center;
     }
 }
 .contact-icon{

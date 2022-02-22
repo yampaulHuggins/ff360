@@ -24,8 +24,8 @@ function Services() {
           </div>
           <div className="sub-item-2">
             <p className="services-paragraph-1">
-              Somo una fábrica establecida desde el 2017 de mobiliarios, residencial y comercial. Para la elaboración de la misma, utilizamos variedad de materiales tales como Madera,
-              Hydrofugo y PVC. Incorporamos la cristalería en nuestros muebles de ser solicitado. Acompañado con herrajes Europeos de alta calidad, recocido en la industria por ejemplo
+              Somos una fábrica establecida desde el 2017 de mobiliarios, residencial y comercial. Para la elaboración de la misma, utilizamos variedad de materiales tales como Madera,
+              Hydrófugo y PVC. Incorporamos la cristalería en nuestros muebles de ser solicitado. Acompañado con herrajes Europeos de alta calidad, recocido en la industria por ejemplo
               HAFELE, HETTICH, KESSBOHMER y más.
               En el tema de las encimeras utilizamos Laminado, Cuarzo y Fenolifico.
             </p>

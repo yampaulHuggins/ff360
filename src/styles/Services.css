@@ -27,6 +27,7 @@
 }
 
 .services-headline {
+  padding: 5% 0 0 0;
   text-align: center;
   font-size: 75px;
   -webkit-box-ordinal-group: 2;
@@ -54,10 +55,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media only screen and (max-width: 480px) {
@@ -73,10 +77,8 @@
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 50%;
+  text-align: center;
 }
 
 @media only screen and (max-width: 480px) {
@@ -96,8 +98,8 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  width: 50%;
-  padding: 7% 0 0 0;
+  width: 100%;
+  padding: 2% 0 0 0;
   background-color: #585858;
 }
 
@@ -116,7 +118,7 @@
       align-self: flex-end;
   padding: 5%;
   text-align: justify;
-  font-size: 24px;
+  font-size: 35px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -173,15 +175,25 @@
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
   background-color: bisque;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .section-3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
 }
 
 .services-paragraph-2 {
   color: black;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  padding: 5% 5% 0 5%;
+  padding: 0% 5% 0 5%;
   text-align: justify;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .sec-item-1 {
@@ -189,7 +201,7 @@
       -ms-flex-order: 1;
           order: 1;
   width: 50%;
-  padding: 12% 0 0 0;
+  padding: 5%;
 }
 
 .sec-item-2 {
@@ -197,6 +209,7 @@
       -ms-flex-order: 2;
           order: 2;
   width: 50%;
+  border: 5px solid #000b9e;
 }
 
 .section-4 {
@@ -269,7 +282,8 @@ a :hover {
 
 .work-Headline {
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
+  padding: 0 5% 0 5%;
 }
 
 @media only screen and (max-width: 480px) {

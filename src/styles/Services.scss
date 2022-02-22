@@ -15,6 +15,7 @@
     flex-flow: column wrap;
 }
 .services-headline {
+    padding: 5% 0 0 0;
     text-align: center;
     font-size: 75px;
     order: 1;
@@ -29,8 +30,9 @@
 .subsection-1{
     order: 3;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     // border: 5px solid rgb(158, 0, 0);
+    align-items: center;
     @media only screen and (max-width: 480px){
         flex-flow: column nowrap;
     }
@@ -38,9 +40,9 @@
 .sub-item-1 {
     // border: 5px solid rgb(0, 0, 0);
     order: 1;
-
-    display: flex;
+    // display: flex;
     width: 50%;
+    text-align: center;
 
     @media only screen and (max-width: 480px){
         width: 100%;
@@ -51,9 +53,9 @@
 
     display: flex;
     flex-flow: column nowrap;
-    //border: 5px solid rgb(132, 0, 158);
-    width: 50%;
-    padding: 7% 0 0 0;
+    // border: 5px solid rgb(132, 0, 158);
+    width: 100%;
+    padding: 2% 0 0 0;
     background-color: rgb(88, 88, 88);
 
     @media only screen and (max-width: 480px){
@@ -67,7 +69,7 @@
     align-self: flex-end;
     padding: 5%;
     text-align: justify;
-    font-size: 24px;
+    font-size: 35px;
     //border: 5px solid rgb(0, 158, 53);
     // align-self: flex-end;
     @media only screen and (max-width: 480px){
@@ -105,23 +107,31 @@
     display: flex;
     flex-flow: row nowrap;
     background-color: bisque;
+    justify-content: center;
+    @media only screen and (max-width: 480px){
+        flex-flow: column nowrap;
+    }
     // margin-top: 5%;
 }
 .services-paragraph-2{
     color: black;
-    align-self: flex-end;
-    padding: 5% 5% 0 5%;
+    // align-self: center;
+    padding: 0% 5% 0 5%;
     text-align: justify;
-    font-size: 24px;
+    font-size: 30px;
+    // width: 100%;
+    // border: 5px solid rgb(0, 11, 158);
 }
 .sec-item-1{
     order: 1;
     width: 50%;
-    padding: 12% 0 0 0;
+    padding: 5%;
+    // padding: 12% 0 0 0;
 }
 .sec-item-2{
     order: 2;
     width: 50%;
+    border: 5px solid rgb(0, 11, 158);
 }
 .section-4{
     // border: 5px solid rgb(0, 11, 158);
@@ -163,7 +173,8 @@ a :hover {
 }
 .work-Headline{
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
+    padding: 0 5% 0 5%;
     //border: 5px solid rgb(0, 158, 84);
     @media only screen and (max-width: 480px){
         font-size: 25px;

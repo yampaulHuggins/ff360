@@ -160,7 +160,7 @@ function Navbar(props) {
                 <MenuIcon className="burger" fontSize="large"/>
                 {/* <RadioButtonUncheckedIcon className="burger" fontSize="medium"/> */}
               </IconButton>
-              {/* <p className="navbar-title">FIZZEL FURNITURE 360</p> */}
+              <p className="navbar-title">FIZZEL FURNITURE 360</p>
               {/* <img src={LOGO03} className={classes.logo} alt='Fizzel Furniture 360 (FF360)'/> */}
               <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
                 {list(anchor)}

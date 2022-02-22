@@ -17,6 +17,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
+import { motion } from 'framer-motion';
 import '../styles/Navbar.css'
 // import LOGO03 from '../LOGO03.svg'
 
@@ -149,6 +150,7 @@ function Navbar(props) {
 
   return (
     <div>
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{opacity: 0}}>
       <ElevationScroll {...props}>
       <AppBar position="fixed" className={classes.toolbar} elevation={0}>
         <Toolbar variant="regular">
@@ -168,6 +170,7 @@ function Navbar(props) {
         </Toolbar>
       </AppBar>
       </ElevationScroll>
+      </motion.div>
     </div>
   );
 }

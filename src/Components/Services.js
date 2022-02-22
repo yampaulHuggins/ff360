@@ -16,21 +16,18 @@ function Services() {
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{opacity: 0}}>
     <div className="wrapper-services">
       <div className="section-1">
-        <h1 className="services-headline">HEADLINE (Slogan)</h1>
-        <h2 className="subheadline">subheadline</h2>
+        <h1 className="services-headline">"Estilo, innovando tu mundo"</h1>
+        <h2 className="subheadline"> - FF360</h2>
         <div className="subsection-1">
           <div className="sub-item-1">
             <img src={LOGO02} className='image' alt='Fizzel Furniture 360 (FF360)'/>
           </div>
           <div className="sub-item-2">
             <p className="services-paragraph-1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim,
-            massa sit amet hendrerit tempus, diam nunc fringilla turpis, eget vehicula metus
-            massa non ex. Morbi porta, velit a bibendum dapibus, metus quam porta felis,
-            ut dignissim odio magna varius mauris. Nam tincidunt quam a urna laoreet rhoncus.
-            Vivamus tortor metus, tempor sit amet blandit eget, rhoncus at augue.
-            Cras ac felis mauris. Nulla gravida eros condimentum risus vulputate,
-            et aliquet diam tincidunt.
+              Somo una fábrica establecida desde el 2017 de mobiliarios, residencial y comercial. Para la elaboración de la misma, utilizamos variedad de materiales tales como Madera,
+              Hydrofugo y PVC. Incorporamos la cristalería en nuestros muebles de ser solicitado. Acompañado con herrajes Europeos de alta calidad, recocido en la industria por ejemplo
+              HAFELE, HETTICH, KESSBOHMER y más.
+              En el tema de las encimeras utilizamos Laminado, Cuarzo y Fenolifico.
             </p>
             {/* <Button size="massive" className="getQuote">Get a Quote Today!</Button> */}
           </div>
@@ -46,17 +43,10 @@ function Services() {
       {/* <div className="section-3">
         <div className="sec-item-1">
           <p className="services-paragraph-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim,
-            massa sit amet hendrerit tempus, diam nunc fringilla turpis, eget vehicula metus
-            massa non ex. Morbi porta, velit a bibendum dapibus, metus quam porta felis,
-            ut dignissim odio magna varius mauris. Nam tincidunt quam a urna laoreet rhoncus.
-            Vivamus tortor metus, tempor sit amet blandit eget, rhoncus at augue.
-            Cras ac felis mauris. Nulla gravida eros condimentum risus vulputate,
-            et aliquet diam tincidunt.
+              Incorporamos la cristalería en nuestros muebles de ser solicitado. Acompañado con herrajes Europeos de alta calidad, recocido en la industria por ejemplo
+              HAFELE, HETTICH, KESSBOHMER y más.
+              En el tema de las encimeras utilizamos Laminado, Cuarzo y Fenolifico.
           </p>
-        </div>
-        <div className="sec-item-2">
-          <img src={LOGO01} className='image' alt='Fizzel Furniture 360 (FF360)'/>
         </div>
       </div> */}
       {/* <div className="subsection-1">
@@ -83,21 +73,6 @@ function Services() {
           <a href='https://www.instagram.com/fizzelfurniture360/' target="_blank" rel="noopener noreferrer"><i class="massive instagram icon"></i></a>
           <a href='https://api.whatsapp.com/send?phone=17875853623&amp;app=facebook&amp;entry_point=page_cta' target="_blank" rel="noopener noreferrer"><i class="massive whatsapp icon"></i></a>
         </div>
-        {/* <Swiper className="photo-gallery"
-          spaceBetween={10}
-          slidesPerView={1}
-          navigation
-          pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log('slide change')}
-        >
-          <SwiperSlide className="slide">
-            <img src={Cuarto} className="photo" alt='Cuarto en madera'/> 
-          </SwiperSlide>
-          <SwiperSlide className="slide">Slide 2</SwiperSlide>
-          <SwiperSlide className="slide">Slide 3</SwiperSlide>
-        </Swiper> */}
       </div>
       {/* <div className="section-5">
         <h1 className="testimonials-Headline">TESTIMONIOS</h1>

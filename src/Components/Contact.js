@@ -32,16 +32,15 @@ function Contact() {
             Contáctanos
           </h1>
           <p className="contact-paragraph">
-            Para <strong>cotizaciones</strong> nos puedes contactar por Facebook,
-            Instagram, Whatsapp o a los siguientes números telefónicos:
-            <strong> (787)-585-3623</strong> o <strong>(939)-282-1986</strong>. 
+          Coordina su cotización hoy mismo llamando al <a href='tel:+1-787-372-4045'>(787)-372-4045</a>.
+          Visita nuestras redes sociales <a href='https://www.instagram.com/fizzelfurniture360/' target="_blank" rel="noopener noreferrer">Instagram</a>, <a href='https://www.facebook.com/fizzelfurniture360/' target="_blank" rel="noopener noreferrer">Facebook</a>, y <a href='https://api.whatsapp.com/send?phone=17873724045&amp;app=facebook&amp;entry_point=page_cta' target="_blank" rel="noopener noreferrer">WhatsApp</a>.
           </p>
         </div>
       </div>
       <div className="item-2-contact">
       <a href='https://www.facebook.com/fizzelfurniture360/' target="_blank" rel="noopener noreferrer"><i class="massive facebook icon"></i></a>
       <a href='https://www.instagram.com/fizzelfurniture360/' target="_blank" rel="noopener noreferrer"><i class="massive instagram icon"></i></a>
-      <a href='https://api.whatsapp.com/send?phone=17875853623&amp;app=facebook&amp;entry_point=page_cta' target="_blank" rel="noopener noreferrer"><i class="massive whatsapp icon"></i></a>
+      <a href='https://api.whatsapp.com/send?phone=17873724045&amp;app=facebook&amp;entry_point=page_cta' target="_blank" rel="noopener noreferrer"><i class="massive whatsapp icon"></i></a>
         {/* <div className="contact-icon-list">
           <div className="icon-social"><a href='https://www.facebook.com/fizzelfurniture360/'><Icon name="facebook official" size="massive"/></a></div>
           <div className="icon-social"><a href='https://www.instagram.com/fizzelfurniture360/'><Icon name="instagram" size="massive"/></a></div>

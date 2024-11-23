@@ -57,7 +57,7 @@ function Footer(){
           {/* <li><a href="https://www.termsfeed.com/blog/write-terms-conditions/">Términos &amp; Condiciones</a></li>
           <li><a href="https://policies.google.com/privacy?hl=en-US">Política de Privacidad</a></li>
           <li><a href="https://policies.google.com/privacy?hl=en-US">Oportunidades de Empleo</a></li> */}
-          <li>FIZZEL FURNITURE 360 &copy; 2022</li>
+          <li>FIZZEL FURNITURE 360 &copy; 2025</li>
         </ul>
       </section>
     </footer>

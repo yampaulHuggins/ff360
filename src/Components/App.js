@@ -11,7 +11,7 @@ import Contact from './Contact';
 import Services from './Services';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import ScrollRestoration from 'react-scroll-restoration';
-import {AnimatePresence} from 'framer-motion'
+import {AnimatePresence} from 'framer-motion';
 
 function App() {
   return (
